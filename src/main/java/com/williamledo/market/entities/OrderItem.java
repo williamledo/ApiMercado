@@ -1,7 +1,9 @@
 package com.williamledo.market.entities;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.williamledo.market.entities.pk.OrderItemPK;
@@ -67,7 +69,8 @@ public class OrderItem implements Serializable {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
-
+	
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
